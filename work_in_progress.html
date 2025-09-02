@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work in Progress – Dean Baltiansky</title>
+  <meta name="description" content="Manuscripts in preparation and under review by Dean Baltiansky" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root { --bg:#ffffff; --text:#0f172a; --muted:#475569; --accent:#2563eb; --card:#f8fafc; --border:#e2e8f0; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0b1220; --text:#e5e7eb; --muted:#94a3b8; --accent:#60a5fa; --card:#0f172a; --border:#1f2937; } }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:var(--bg); color:var(--text); line-height:1.6}
+    .container{max-width:880px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0 8px;border-bottom:1px solid var(--border);position:sticky;top:0;backdrop-filter:blur(8px);background:color-mix(in oklab, var(--bg) 85%, transparent)}
+    nav a{text-decoration:none;color:var(--muted);margin-left:16px;font-weight:600}
+    nav a:hover{color:var(--text)}
+    h1{font-size:clamp(26px,4vw,36px);margin:18px 0}
+    .pub-list{list-style:none;padding-left:0}
+    .pub-list li{margin:14px 0}
+    em{font-style:italic}
+    footer{margin:48px 0 16px;border-top:1px solid var(--border);padding-top:16px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="font-weight:800">DB</div>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="work-in-progress.html">Work in Progress</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Manuscripts in preparation and under review</h1>
+      <ul class="pub-list">
+        <li>Baltiansky, D. &amp; Ames, D. R. (under review). Dominance through the lens of a competitive worldview: The role of relationship expectancies. <a href="/assets/baltiansky_ames_dominance.pdf">pdf</a> · <a href="https://osf.io/rjv3q/">OSF</a> · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5348353">SSRN</a></li>
+        <li>Baltiansky, D. &amp; Brown, N. D. (under review). Not all is loss: Class-based zero-sum beliefs foster working-class solidarity and support for redistributive policy. <a href="/assets/baltiansky_brown_zero_sum.pdf">pdf</a> · <a href="https://osf.io/abtsg/">OSF</a></li>
+        <li>Baltiansky, D. &amp; Davidai, S. (submitted). Zero-sum beliefs about taboo transactions. <a href="/assets/baltiansky_davidai_taboo.pdf">pdf</a> · <a href="https://osf.io/p6xj3/">OSF</a></li>
+        <li>Baltiansky, D. &amp; Ames, D. R. (submitted). Opponent or partner: Do negotiation counterpart labels matter? <a href="/assets/baltiansky_ames_negotiation.pdf">pdf</a> · <a href="https://osf.io/mdazh/">OSF</a></li>
+        <li>Baltiansky, D., Santos, L. R., &amp; Zaki, J. (submitted). Belief in zero-sum happiness: Relationships to prosocial behavior and well-being. <a href="/assets/baltiansky_santos_zaki_bzsh.pdf">pdf</a> · <a href="https://osf.io/phyek/">OSF</a></li>
+        <li>Baltiansky, D. &amp; Matz, S. (in prep). The socio-political consequences of a broken social contract. <a href="/assets/baltiansky_matz_social_contract.pdf">pdf</a> · <a href="https://osf.io/t2df4/">OSF</a></li>
+      </ul>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Dean Baltiansky
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

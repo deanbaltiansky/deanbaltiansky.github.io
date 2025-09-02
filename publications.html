@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications – Dean Baltiansky</title>
+  <meta name="description" content="Publications by Dean Baltiansky" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root { --bg:#ffffff; --text:#0f172a; --muted:#475569; --accent:#2563eb; --card:#f8fafc; --border:#e2e8f0; }
+    @media (prefers-color-scheme: dark){ :root{ --bg:#0b1220; --text:#e5e7eb; --muted:#94a3b8; --accent:#60a5fa; --card:#0f172a; --border:#1f2937; } }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:var(--bg); color:var(--text); line-height:1.6}
+    .container{max-width:880px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0 8px;border-bottom:1px solid var(--border);position:sticky;top:0;backdrop-filter:blur(8px);background:color-mix(in oklab, var(--bg) 85%, transparent)}
+    nav a{text-decoration:none;color:var(--muted);margin-left:16px;font-weight:600}
+    nav a:hover{color:var(--text)}
+    h1{font-size:clamp(26px,4vw,36px);margin:18px 0}
+    .pub-list{list-style:none;padding-left:0}
+    .pub-list li{margin:14px 0}
+    em{font-style:italic}
+    footer{margin:48px 0 16px;border-top:1px solid var(--border);padding-top:16px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="font-weight:800">DB</div>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="work-in-progress.html">Work in Progress</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Publications</h1>
+      <ul class="pub-list">
+        <li>Tamaki, R.* &amp; Baltiansky, D. (2024). Fitness social media is positively associated with the use of performance-enhancing drugs among young men. <em>Journal of Emerging Investigators, 7</em>. <a href="https://doi.org/10.59720/23-083">https://doi.org/10.59720/23-083</a> · <a href="/assets/baltiansky_tamaki_fitness.pdf">pdf</a> · <a href="https://osf.io/5zqub/">OSF</a></li>
+        <li>Courtney, A. L., Baltiansky, D., Fang, W., Roshanaei, M., Aybas, Y., Samuels, N., Wetchler, E., Wu, Z., Jackson, M. O., &amp; Zaki, J. (2024). Social microclimates and well-being. <em>Emotion, 24</em>(3), 836–846. <a href="https://doi.org/10.1037/emo0001277">https://doi.org/10.1037/emo0001277</a> · <a href="/assets/baltiansky_courtney_microclimates.pdf">pdf</a> · <a href="https://osf.io/gyzjk/">OSF</a></li>
+        <li>Baltiansky, D., Craig, M. A., &amp; Jost, J. T. (2023). Apples vs. oranges, normative claims, and other things we did not mention: A response to Purser and Harper (2023). <em>Humor, 36</em>(1), 151–158. <a href="https://doi.org/10.1515/humor-2022-0133">https://doi.org/10.1515/humor-2022-0133</a> · <a href="/assets/baltiansky_craig_jost_response.pdf">pdf</a></li>
+        <li>Zaki, J., Neumann, E., &amp; Baltiansky, D. (2021). Market cognition: How norms of exchange alter social experience. <em>Current Directions in Psychological Science, 30</em>(3), 236–241. <a href="https://doi.org/10.1177/0963721421995492">https://doi.org/10.1177/0963721421995492</a> · <a href="/assets/zaki_neumann_baltiansky_market_cognition.pdf">pdf</a></li>
+        <li>Baltiansky, D., Craig, M. A., &amp; Jost, J. T. (2021). At whose expense? System justification and the appreciation of stereotypical humor targeting high vs. low status groups. <em>Humor, 34</em>(3), 375–391. <a href="https://doi.org/10.1515/humor-2020-0041">https://doi.org/10.1515/humor-2020-0041</a> · <a href="/assets/baltiansky_craig_jost_humor.pdf">pdf</a> · <a href="https://osf.io/xr95h/">OSF</a></li>
+      </ul>
+      <p style="color:var(--muted);font-size:14px">*high-school student advisee</p>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Dean Baltiansky
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
