@@ -42,12 +42,11 @@
     .card-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 24px; }
     .card { border: 1px solid var(--border); background: var(--card); border-radius: 16px; padding: 16px; }
     .card h3 { margin: 0 0 6px; }
-    .chip-row { display:flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
-    .chip { border: 1px solid var(--border); padding: 4px 10px; border-radius: 999px; font-size: 12px; color: var(--muted); }
     footer { margin: 48px 0 16px; border-top:1px solid var(--border); padding-top: 16px; color: var(--muted); font-size: 14px; }
     .btn { display:inline-block; padding: 10px 14px; border-radius: 10px; background: var(--text); color: var(--bg); text-decoration:none; font-weight: 700; }
     .btn:hover { opacity: 0.92; }
-    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+    .pub-list { margin: 16px 0; padding-left: 20px; }
+    .pub-list li { margin-bottom: 14px; }
   </style>
 </head>
 <body>
@@ -57,6 +56,7 @@
       <nav aria-label="Primary">
         <a href="#about">About</a>
         <a href="#work">Work</a>
+        <a href="#publications">Publications</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -68,21 +68,15 @@
           <h1>Hi, I’m Dean Baltiansky.</h1>
           <p class="lead">A behavioral scientist at Columbia Business School.</p>
           <p style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
-  <a class="btn" href="/assets/academic-cv.pdf" target="_blank" rel="noopener">Academic CV</a>
-  <a class="btn" href="/assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
-</p>
+            <a class="btn" href="/assets/academic-cv.pdf" target="_blank" rel="noopener">Academic CV</a>
+            <a class="btn" href="/assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </p>
         </div>
       </section>
 
       <section id="about">
         <h2>About</h2>
         <p>I design experiments, apply advanced quantitative methods, and communicate insights to academic and organizational stakeholders. My research examines how people build trust in one another, their organizations, and society.</p>
-        <div class="chip-row">
-          <span class="chip">Design</span>
-          <span class="chip">Research</span>
-          <span class="chip">Writing</span>
-          <span class="chip">Experiments</span>
-        </div>
       </section>
 
       <section id="work" style="margin-top:32px;">
@@ -105,6 +99,30 @@
           </article>
         </div>
       </section>
+
+      <section id="publications" style="margin-top:32px;">
+  <h2>Publications</h2>
+  <ul class="pub-list">
+    <li>Tamaki, R.* & Baltiansky, D. (2024). Fitness social media is positively associated with the use of performance-enhancing drugs among young men. <em>Journal of Emerging Investigators, 7.</em> <a href="https://doi.org/10.59720/23-083">https://doi.org/10.59720/23-083</a> | <a href="/assets/baltiansky_tamaki_fitness.pdf">pdf</a> | <a href="https://osf.io/5zqub/">osf</a></li>
+    <li>Courtney, A. L., Baltiansky, D., Fang, W., Roshanaei, M., Aybas, Y., Samuels, N., Wetchler, E., Wu, Z., Jackson, M. O., & Zaki, J. (2024). Social microclimates and well-being. <em>Emotion, 24</em>(3), 836-846. <a href="https://doi.org/10.1037/emo0001277">https://doi.org/10.1037/emo0001277</a> | <a href="/assets/baltiansky_courtney_microclimates.pdf">pdf</a> | <a href="https://osf.io/gyzjk/">osf</a></li>
+    <li>Baltiansky, D., Craig, M. A., & Jost. J. T. (2023). Apples vs. oranges, normative claims, and other things we did not mention: a response to Purser and Harper (2023). <em>Humor, 36</em>(1), 151-158. <a href="https://doi.org/10.1515/humor-2022-0133">https://doi.org/10.1515/humor-2022-0133</a> | <a href="/assets/baltiansky_craig_jost_response.pdf">pdf</a></li>
+    <li>Zaki, J., Neumann, E., & Baltiansky, D. (2021). Market cognition: How norms of exchange alter social experience. <em>Current Directions in Psychological Science, 30</em>(3), 236-241. <a href="https://doi/10.1177/0963721421995492">https://doi/10.1177/0963721421995492</a> | <a href="/assets/zaki_neumann_baltiansky_market_cognition.pdf">pdf</a></li>
+    <li>Baltiansky, D., Craig, M. A. & Jost, J. T. (2021). At whose expense? System justification and the appreciation of stereotypical humor targeting high vs. low status groups. <em>Humor, 34</em>(3), 375-391. <a href="https://doi.org/10.1515/humor-2020-0041">https://doi.org/10.1515/humor-2020-0041</a> | <a href="/assets/baltiansky_craig_jost_humor.pdf">pdf</a> | <a href="https://osf.io/xr95h/">osf</a></li>
+  </ul>
+  <p style="font-size:14px; color:var(--muted);">*high-school student advisee</p>
+</section>
+
+      <section id="manuscripts" style="margin-top:32px;">
+  <h2>Manuscripts in preparation and under review</h2>
+  <ul class="pub-list">
+    <li>Baltiansky, D. & Ames, D. R. (under review). Dominance through the lens of a competitive worldview: The role of relationship expectancies. <a href="/assets/baltiansky_ames_dominance.pdf">pdf</a> | <a href="https://osf.io/rjv3q/">osf</a></li>
+    <li>Baltiansky, D. & Brown, N. D. (under review). Not all is loss: Class-based zero-sum beliefs foster working-class solidarity and support for redistributive policy. <a href="/assets/baltiansky_brown_zero_sum.pdf">pdf</a> | <a href="https://osf.io/abtsg/">osf</a></li>
+    <li>Baltiansky, D. & Davidai, S. (submitted). Zero-sum beliefs about taboo transactions. <a href="/assets/baltiansky_davidai_taboo.pdf">pdf</a> | <a href="https://osf.io/p6xj3/">osf</a></li>
+    <li>Baltiansky, D. & Ames, D. R. (submitted). Opponent or partner: Do negotiation counterpart labels matter? <a href="/assets/baltiansky_ames_negotiation.pdf">pdf</a> | <a href="https://osf.io/mdazh/">osf</a></li>
+    <li>Baltiansky, D., Santos, L. R., & Zaki, J. (submitted). Belief in zero-sum happiness: Relationships to prosocial behavior and well-being. <a href="/assets/baltiansky_santos_zaki_bzsh.pdf">pdf</a> | <a href="https://osf.io/phyek/">osf</a></li>
+    <li>Baltiansky, D. & Matz, S. (in prep). The socio-political consequences of a broken social contract. <a href="/assets/baltiansky_matz_social_contract.pdf">pdf</a> | <a href="https://osf.io/t2df4/">osf</a></li>
+  </ul>
+</section>
 
       <section id="contact" style="margin-top:32px;">
         <h2>Contact</h2>
