@@ -115,19 +115,19 @@
     </li>
     <li style="margin:10px 0;">
       <a href="https://github.com/deanbaltiansky" class="contact-link" target="_blank" rel="noopener">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub" class="icon"> 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="icon"> 
         <span>GitHub</span>
       </a>
     </li>
     <li style="margin:10px 0;">
       <a href="https://scholar.google.com/citations?user=eUDli9kAAAAJ&hl=en" class="contact-link" target="_blank" rel="noopener">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOiFntKULR8C2LsjfzEYk462yF0TtYkL4RxA&s" alt="Google Scholar" class="icon"> 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" class="icon"> 
         <span>Google Scholar</span>
       </a>
     </li>
     <li style="margin:10px 0;">
       <a href="https://osf.io/r93bu/" class="contact-link" target="_blank" rel="noopener">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/765px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="OSF" class="icon"> 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Open_Science_Framework_logo.svg" alt="OSF" class="icon"> 
         <span>OSF</span>
       </a>
     </li>
@@ -144,20 +144,16 @@
     transition: color 0.2s ease;
   }
   .contact-link .icon {
-    width: 20px;
-    height: 20px;
-    filter: brightness(0) saturate(100%) invert(34%) sepia(90%) saturate(3000%) 
-            hue-rotate(210deg) brightness(97%) contrast(101%);
-    transition: filter 0.2s ease;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0); /* force black */
   }
   .contact-link:hover {
     color: var(--accent);
   }
-  .contact-link:hover .icon {
-    filter: brightness(0) saturate(100%) invert(40%) sepia(95%) saturate(3500%) 
-            hue-rotate(210deg) brightness(110%) contrast(105%);
-  }
 </style>
+
 
     </main>
 
