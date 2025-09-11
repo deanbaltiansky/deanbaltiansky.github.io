@@ -102,32 +102,32 @@
   <h2>Contact</h2>
   <ul style="list-style:none; padding-left:0; margin:0;">
     <li style="margin:10px 0;">
-      <a href="mailto:dean.baltiansky@columbia.edu" class="contact-link" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" alt="Email" class="icon"> 
+      <a href="mailto:dean.baltiansky@columbia.edu" class="contact-link" target="_blank" rel="noopener" aria-label="Email Dean">
+        <img src="/assets/icons/email.svg" alt="" class="icon" /> 
         <span>dean.baltiansky@columbia.edu</span>
       </a>
     </li>
     <li style="margin:10px 0;">
-      <a href="https://www.linkedin.com/in/dean-baltiansky/" class="contact-link" target="_blank" rel="noopener">
-        <img src="https://icons.veryicon.com/png/o/miscellaneous/alibaba-cloud-ui-icon-library/linkedin-124.png" alt="LinkedIn" class="icon"> 
+      <a href="https://www.linkedin.com/in/dean-baltiansky/" class="contact-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="/assets/icons/linkedin.svg" alt="" class="icon" /> 
         <span>LinkedIn</span>
       </a>
     </li>
     <li style="margin:10px 0;">
-      <a href="https://github.com/deanbaltiansky" class="contact-link" target="_blank" rel="noopener">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="icon"> 
+      <a href="https://github.com/deanbaltiansky" class="contact-link" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="/assets/icons/github.svg" alt="" class="icon" /> 
         <span>GitHub</span>
       </a>
     </li>
     <li style="margin:10px 0;">
-      <a href="https://scholar.google.com/citations?user=eUDli9kAAAAJ&hl=en" class="contact-link" target="_blank" rel="noopener">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" class="icon"> 
+      <a href="https://scholar.google.com/citations?user=eUDli9kAAAAJ&hl=en" class="contact-link" target="_blank" rel="noopener" aria-label="Google Scholar">
+        <img src="/assets/icons/google-scholar.png" alt="" class="icon" /> 
         <span>Google Scholar</span>
       </a>
     </li>
     <li style="margin:10px 0;">
-      <a href="https://osf.io/r93bu/" class="contact-link" target="_blank" rel="noopener">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Open_Science_Framework_logo.svg" alt="OSF" class="icon"> 
+      <a href="https://osf.io/r93bu/" class="contact-link" target="_blank" rel="noopener" aria-label="OSF profile">
+        <img src="/assets/icons/osf.svg" alt="" class="icon" /> 
         <span>OSF</span>
       </a>
     </li>
@@ -146,13 +146,16 @@
   .contact-link .icon {
     width: 24px;
     height: 24px;
-    object-fit: contain;
-    filter: brightness(0); /* force black */
+    object-fit: contain;     /* handles inconsistent intrinsic padding */
+    filter: brightness(0);   /* black in light mode */
+    transition: filter 0.2s ease;
   }
-  .contact-link:hover {
-    color: var(--accent);
+  .contact-link:hover { color: var(--accent); }
+  @media (prefers-color-scheme: dark) {
+    .contact-link .icon { filter: brightness(0) invert(1); } /* white in dark mode */
   }
 </style>
+
 
 
     </main>
