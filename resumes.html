@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Industry Resumes – Dean Baltiansky</title>
+  <meta name="description" content="Industry resumes and academic CV for Dean Baltiansky" />
+  <meta property="og:title" content="Industry Resumes – Dean Baltiansky" />
+  <meta property="og:description" content="Download Data Science, People Analytics resumes, and academic CV." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://deanbaltiansky.com/resumes.html" />
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Inline styles copied from index.html -->
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a; /* slate-900 */
+      --muted: #475569; /* slate-600 */
+      --accent: #2563eb; /* blue-600 */
+      --card: #f8fafc; /* slate-50 */
+      --border: #e2e8f0; /* slate-200 */
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0b1220; --text: #e5e7eb; --muted: #94a3b8; --accent:#60a5fa; --card:#0f172a; --border:#1f2937; }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+                   "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 880px; margin: 0 auto; padding: 24px; }
+    header {
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 12px 0 8px;
+      border-bottom:1px solid var(--border);
+      position: sticky; top:0;
+      backdrop-filter: blur(8px);
+      background: color-mix(in oklab, var(--bg) 85%, transparent);
+    }
+    nav a { text-decoration: none; color: var(--muted); margin-left: 16px; font-weight: 600; }
+    nav a:hover { color: var(--text); }
+    h1 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; margin: 0; }
+    footer {
+      margin: 48px 0 16px;
+      border-top:1px solid var(--border);
+      padding-top: 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .btn {
+      display:inline-block; padding: 10px 14px;
+      border-radius: 10px;
+      background: var(--text); color: var(--bg);
+      text-decoration:none; font-weight: 700;
+    }
+    .btn:hover { opacity: 0.92; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <div style="font-weight: 700;">Dean Baltiansky</div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/resumes.html">Resumes</a>
+      </nav>
+    </header>
+
+    <main style="padding: 32px 0 48px;">
+      <h1>Industry Resumes</h1>
+      <p>
+        You can download my industry resumes here. Use the Data Science resume for experimentation and
+        behavioral data science roles, and the People Analytics resume for people analytics, employee
+        experience, and organizational research roles.
+      </p>
+
+      <section style="margin-top: 32px;">
+        <h2>Data Science (Experimentation)</h2>
+        <p>
+          Focus: experimentation, causal inference, behavioral data science, randomized studies, and
+          statistical modeling.
+        </p>
+        <p>
+          <a class="btn" href="/assets/DeanBaltiansky_Resume_DS.pdf" target="_blank" rel="noopener">
+            Download Data Science Resume (PDF)
+          </a>
+        </p>
+      </section>
+
+      <section style="margin-top: 32px;">
+        <h2>People Analytics</h2>
+        <p>
+          Focus: survey analytics, employee experience, leadership behavior, organizational trust,
+          and measurement frameworks.
+        </p>
+        <p>
+          <a class="btn" href="/assets/DeanBaltiansky_Resume_PeopleAnalytics.pdf" target="_blank" rel="noopener">
+            Download People Analytics Resume (PDF)
+          </a>
+        </p>
+      </section>
+
+      <hr style="margin: 40px 0;" />
+
+      <section>
+        <h3>Academic CV</h3>
+        <p>
+          For academic collaborators and peers, my full CV is available here:
+        </p>
+        <p>
+          <a href="/assets/academic-cv.pdf" target="_blank" rel="noopener">
+            Download Academic CV (PDF)
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Dean Baltiansky</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
