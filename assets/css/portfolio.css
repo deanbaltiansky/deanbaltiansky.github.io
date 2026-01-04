@@ -97,22 +97,20 @@
   opacity: .72;
 }
 
-/* CTA: inviting but professional */
+/* CTA: directional label (card is the link) */
 .work-card__cta {
   font-weight: 600;
-  font-size: .95rem;
-  opacity: .9;
+  font-size: 0.9rem;
+  color: var(--muted);
+  opacity: 0.85;
+  pointer-events: none; /* CTA is not a separate link */
 }
 
-.work-card__cta span {
-  display: inline-block;
-  transform: translateX(0);
-  transition: transform .12s ease;
+.work-card:hover .work-card__cta {
+  color: var(--text);
+  opacity: 1;
 }
 
-.work-card:hover .work-card__cta span {
-  transform: translateX(2px);
-}
 
 /* Flagship card: subtle emphasis, not gaudy */
 .work-card--flagship {
