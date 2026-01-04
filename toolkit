@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toolkit — Dean Baltiansky</title>
+  <meta name="description" content="Toolkit: links to reproducible projects and repositories." />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Reuse the same styling pattern as your homepage -->
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0b1220; --text: #e5e7eb; --muted: #94a3b8; --accent:#60a5fa; --card:#0f172a; --border:#1f2937; }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 880px; margin: 0 auto; padding: 24px; }
+    header {
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 12px 0 8px; border-bottom:1px solid var(--border);
+      position: sticky; top:0; backdrop-filter: blur(8px);
+      background: color-mix(in oklab, var(--bg) 85%, transparent);
+    }
+    nav a { text-decoration: none; color: var(--muted); margin-left: 16px; font-weight: 600; }
+    nav a:hover { color: var(--text); }
+
+    h1 { font-size: clamp(26px, 3.5vw, 36px); line-height: 1.2; margin: 24px 0 0; }
+    .lead { color: var(--muted); font-size: 18px; margin-top: 10px; max-width: 70ch; }
+
+    .list { margin-top: 18px; display: grid; gap: 12px; }
+    .item {
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+      padding: 16px;
+      text-decoration: none;
+      color: inherit;
+      display: grid;
+      gap: 6px;
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+    .item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0,0,0,.08);
+      border-color: color-mix(in oklab, var(--border) 70%, var(--accent) 30%);
+    }
+    .item:focus-visible { outline: 3px solid rgba(0,0,0,.25); outline-offset: 2px; }
+    .item__title { margin: 0; font-weight: 750; }
+    .item__desc { margin: 0; color: var(--muted); }
+    .item__cta { margin-top: 2px; font-weight: 650; color: var(--accent); }
+
+    .placeholder {
+      border-style: dashed;
+      cursor: default;
+    }
+    .placeholder:hover { transform: none; box-shadow: none; border-color: var(--border); }
+
+    footer { margin: 48px 0 16px; border-top:1px solid var(--border); padding-top: 16px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a href="/" style="text-decoration:none; color:inherit; font-weight:800;">Dean Baltiansky</a>
+      <nav>
+        <a href="/#work">Work</a>
+        <a href="/publications.html">Publications</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Toolkit</h1>
+      <p class="lead">
+        A small collection of reproducible projects and repositories. More coming soon.
+      </p>
+
+      <div class="list">
+        <a class="item" href="https://deanbaltiansky.com/ab-testing-managerial-dominance/" target="_blank" rel="noopener noreferrer">
+          <p class="item__title">A/B Test: Managerial Dominance</p>
+          <p class="item__desc">End-to-end randomized experiment and analysis write-up.</p>
+          <div class="item__cta">Open →</div>
+        </a>
+
+        <a class="item" href="https://github.com/deanbaltiansky/ab-testing-social-contract" target="_blank" rel="noopener noreferrer">
+          <p class="item__title">A/B Test Repo: Social Contract</p>
+          <p class="item__desc">Reproducible code + analysis pipeline on GitHub.</p>
+          <div class="item__cta">Open →</div>
+        </a>
+
+        <div class="item placeholder" role="note" aria-label="Under construction">
+          <p class="item__title">Under construction</p>
+          <p class="item__desc">More tools will be added here soon.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Dean Baltiansky
+      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    </footer>
+  </div>
+</body>
+</html>
