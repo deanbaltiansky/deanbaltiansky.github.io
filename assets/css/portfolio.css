@@ -111,12 +111,6 @@
   opacity: 1;
 }
 
-
-/* Flagship card: subtle emphasis, not gaudy */
-.work-card--flagship {
-  border-color: rgba(0,0,0,.22);
-}
-
 .work-card {
   display: flex;
   flex-direction: column;
