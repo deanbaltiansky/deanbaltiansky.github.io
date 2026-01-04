@@ -47,7 +47,7 @@
   border-radius: 14px;
   padding: 16px 16px 14px;
   color: inherit;
-  background: rgba(255,255,255,.92);
+  background: var(--card);
   transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
 }
 
@@ -118,3 +118,18 @@
 .work-card--flagship {
   border-color: rgba(0,0,0,.22);
 }
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card__body {
+  flex: 1;
+}
+
+.work-card__cta {
+  align-self: flex-end;
+  margin-top: 12px;
+}
+
