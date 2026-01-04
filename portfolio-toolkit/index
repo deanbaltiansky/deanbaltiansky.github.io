@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toolkit — Dean Baltiansky</title>
+  <meta name="description" content="A small toolkit of applied analysis projects and repositories." />
+  <link rel="icon" href="/favicon.ico" />
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0b1220; --text: #e5e7eb; --muted: #94a3b8; --accent:#60a5fa; --card:#0f172a; --border:#1f2937; }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 880px; margin: 0 auto; padding: 24px; }
+
+    header {
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 12px 0 8px; border-bottom:1px solid var(--border);
+      position: sticky; top:0; backdrop-filter: blur(8px);
+      background: color-mix(in oklab, var(--bg) 85%, transparent);
+    }
+    nav a { text-decoration: none; color: var(--muted); margin-left: 16px; font-weight: 600; }
+    nav a:hover { color: var(--text); }
+
+    h1 { font-size: clamp(26px, 3.5vw, 36px); line-height: 1.2; margin: 0; }
+    .lead { color: var(--muted); font-size: 18px; margin-top: 10px; max-width: 70ch; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    @media (max-width: 780px) { .grid { grid-template-columns: 1fr; } }
+
+    .tile {
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 16px;
+      padding: 16px;
+      text-decoration: none;
+      color: inherit;
+      display: grid;
+      gap: 10px;
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+    .tile:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0,0,0,.08);
+      border-color: color-mix(in oklab, var(--border) 70%, var(--accent) 30%);
+    }
+    .tile:focus-visible {
+      outline: 3px solid rgba(0,0,0,.25);
+      outline-offset: 2px;
+    }
+
+    .tile__top { display:flex; gap: 10px; align-items:flex-start; }
+    .tile__icon {
+      width: 30px; height: 30px; display:grid; place-items:center;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,.10);
+      background: rgba(0,0,0,.02);
+      flex: 0 0 auto;
+      color: var(--text);
+    }
+    .tile__title { margin: 0; font-size: 1.02rem; line-height: 1.25; }
+    .tile__subtitle { margin: 0; color: var(--muted); }
+    .tile__cta { margin-top: 2px; font-weight: 650; font-size: 0.92rem; color: var(--accent); }
+
+    /* Under construction tile: looks intentional, not broken */
+    .tile--placeholder {
+      cursor: default;
+      border-style: dashed;
+      opacity: 0.95;
+    }
+    .tile--placeholder:hover {
+      transform: none;
+      box-shadow: none;
+      border-color: var(--border);
+    }
+
+    footer { margin: 48px 0 16px; border-top:1px solid var(--border); padding-top: 16px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a href="/" style="text-decoration:none; color:inherit; font-weight:800;">Dean Baltiansky</a>
+      <nav>
+        <a href="/#work">Work</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section style="margin-top: 24px;">
+        <h1>Toolkit</h1>
+        <p class="lead">
+          A small collection of reproducible projects and repositories. More coming soon.
+        </p>
+
+        <div class="grid">
+          <!-- Link 1 -->
+          <a class="tile" href="https://deanbaltiansky.com/ab-testing-managerial-dominance/" target="_blank" rel="noopener noreferrer">
+            <div class="tile__top">
+              <div class="tile__icon" aria-hidden="true">
+                <!-- split test icon -->
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 5v14M18 5v14" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" opacity="0.55"/>
+                  <path d="M6 8h12M6 12h12M6 16h12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+                  <circle cx="9" cy="8" r="1.2" fill="currentColor"/>
+                  <circle cx="15" cy="12" r="1.2" fill="currentColor"/>
+                </svg>
+              </div>
+              <div>
+                <h2 class="tile__title">A/B Test: Managerial Dominance</h2>
+                <p class="tile__subtitle">End-to-end randomized experiment and analysis write-up.</p>
+              </div>
+            </div>
+            <div class="tile__cta">Open →</div>
+          </a>
+
+          <!-- Link 2 -->
+          <a class="tile" href="https://github.com/deanbaltiansky/ab-testing-social-contract" target="_blank" rel="noopener noreferrer">
+            <div class="tile__top">
+              <div class="tile__icon" aria-hidden="true">
+                <!-- repo icon -->
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 7h10M7 12h6M7 17h10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+                  <path d="M5 4h14v16H5z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <h2 class="tile__title">A/B Test Repo: Social Contract</h2>
+                <p class="tile__subtitle">Reproducible code + analysis pipeline on GitHub.</p>
+              </div>
+            </div>
+            <div class="tile__cta">Open →</div>
+          </a>
+
+          <!-- Placeholder (under construction) -->
+          <div class="tile tile--placeholder" role="note" aria-label="Under construction">
+            <div class="tile__top">
+              <div class="tile__icon" aria-hidden="true">
+                <!-- wrench icon -->
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 7a4 4 0 0 0 5 5l-3 3-2-2-6.5 6.5a2 2 0 0 1-2.8-2.8L11.2 10l-2-2 3-3a4 4 0 0 0 1.8 2z"
+                        stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <h2 class="tile__title">Under construction</h2>
+                <p class="tile__subtitle">More tools will be added here soon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Dean Baltiansky
+      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    </footer>
+  </div>
+</body>
+</html>
